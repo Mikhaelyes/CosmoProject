@@ -63,23 +63,23 @@ int main() {
 
             //Управление кораблем
             if (sf::Keyboard::isKeyPressed(sf::Keyboard::Left)) {
-                shipV.setX(ship.getVel().getX() - 0.1);
+                shipV.setX(ship.getVel().getX() - 0.8);
                 shipV.setY(ship.getVel().getY());
                 ship.setVel(shipV);
             }
             if (sf::Keyboard::isKeyPressed(sf::Keyboard::Right)) {
-                shipV.setX(ship.getVel().getX() + 0.1);
+                shipV.setX(ship.getVel().getX() + 0.8);
                 shipV.setY(ship.getVel().getY());
                 ship.setVel(shipV);
             }
             if (sf::Keyboard::isKeyPressed(sf::Keyboard::Up)) {
                 shipV.setX(ship.getVel().getX());
-                shipV.setY(ship.getVel().getY() - 0.1);
+                shipV.setY(ship.getVel().getY() - 0.8);
                 ship.setVel(shipV);
             }
             if (sf::Keyboard::isKeyPressed(sf::Keyboard::Down)) {
                 shipV.setX(ship.getVel().getX());
-                shipV.setY(ship.getVel().getY() + 0.1);
+                shipV.setY(ship.getVel().getY() + 0.8);
                 ship.setVel(shipV);
             }
 
